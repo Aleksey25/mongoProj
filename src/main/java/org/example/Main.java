@@ -21,20 +21,22 @@ public class Main {
         log.info("List of dataBases: " + connector.getDBList().toString());
         CollectionOperations operations = new CollectionOperations(connector);
         try {
-            operations.dropCollection("stadiums");
-            MongoCollection<Document> collection = operations.createCollection("stadiums");
-            operations.insertManyFromFile(collection, "jsons/stadiums.json");
-
+            collectionSetUp(operations);
             finds(operations);
             updates(operations);
             agregates(operations);
             deletes(operations);
-
         } catch (Exception e) {
             log.warn("Error: " + e.getMessage());
         } finally {
             connector.close();
         }
+    }
+
+    public static void collectionSetUp(CollectionOperations operations){
+        operations.dropCollection("stadiums");
+        MongoCollection<Document> collection = operations.createCollection("stadiums");
+        operations.insertManyFromFile(collection, "jsons/stadiums.json");
     }
 
     public static void finds(CollectionOperations operations){
