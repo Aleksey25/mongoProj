@@ -2,7 +2,6 @@ package org.example.db;
 
 import com.mongodb.BasicDBObject;
 import com.mongodb.client.AggregateIterable;
-import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.result.DeleteResult;
 import com.mongodb.client.result.UpdateResult;
@@ -83,7 +82,7 @@ public class CollectionOperations{
         log.info("Updated " + result.getModifiedCount() + " documents");
     }
 
-    public void agregateFromFile(String fileName){
+    public void aggregateFromFile(String fileName){
         AggregateIterable<Document> result =  collection.aggregate(getDocsFromFile(fileName));
         logOperationResult(result);
     }

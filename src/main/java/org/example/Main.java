@@ -80,7 +80,7 @@ public class Main {
 
     public static void agregates(CollectionOperations operations){
         log.info("Количество и средняя вместимость стадионов новее 2000 года");
-        operations.agregateFromFile("jsons/agregate.json");
+        operations.aggregateFromFile("jsons/agregate.json");
     }
 
     public static void deletes(CollectionOperations operations){
