@@ -1,0 +1,25 @@
+[
+  {
+    "$match": {
+      "$or": [
+        { "buildYear": { "$gte": 2000 } },
+        { "reconstructionYear": { "$gte": 2000 } }
+      ]
+    }
+  },
+  {
+    "$group": {
+      "_id": null,
+      "count": { "$sum": 1 },
+      "averageCapacity": { "$avg": "$capacity" }
+    }
+  },
+  {
+    "$project": {
+      "_id": 0,
+      "type": "new",
+      "count": 1,
+      "averageCapacity": 1
+    }
+  }
+]

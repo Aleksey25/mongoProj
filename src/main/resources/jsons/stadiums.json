@@ -1,0 +1,85 @@
+[
+  {
+    "city": "Manchester",
+    "club": "Manchester United",
+    "name": "Old Trafford",
+    "capacity": 74879,
+    "buildYear": 1910,
+    "reconstructionYear": 1999,
+    "wasUCLFinal": true
+  },
+  {
+    "city": "London",
+    "club": "Arsenal",
+    "name": "Emirates Stadium",
+    "capacity": 60704,
+    "buildYear": 2006,
+    "wasUCLFinal": false
+  },
+  {
+    "city": "Liverpool",
+    "club": "Liverpool",
+    "name": "Anfield",
+    "capacity": 53394,
+    "buildYear": 1884,
+    "reconstructionYear": 2016,
+    "wasUCLFinal": true
+  },
+  {
+    "city": "Milan",
+    "club": "AC Milan",
+    "name": "San Siro",
+    "capacity": 80018,
+    "buildYear": 1926,
+    "wasUCLFinal": true
+  },
+  {
+    "city": "Madrid",
+    "club": "Real Madrid",
+    "name": "Santiago Bernabeu",
+    "capacity": 81044,
+    "buildYear": 1947,
+    "reconstructionYear": 2024,
+    "wasUCLFinal": true
+  },
+  {
+    "city": "Munich",
+    "club": "Bayern Munich",
+    "name": "Allianz Arena",
+    "capacity": 75000,
+    "buildYear": 2005,
+    "wasUCLFinal": true
+  },
+  {
+    "city": "Barcelona",
+    "club": "Barcelona",
+    "name": "Camp Nou",
+    "capacity": 99354,
+    "buildYear": 1957,
+    "wasUCLFinal": true
+  },
+  {
+    "city": "Manchester",
+    "club": "Manchester City",
+    "name": "Etihad Stadium",
+    "capacity": 55097,
+    "buildYear": 2012,
+    "wasUCLFinal": false
+  },
+  {
+    "city": "Turin",
+    "club": "Juventus",
+    "name": "Allianz Stadium",
+    "capacity": 41654,
+    "buildYear": 2011,
+    "wasUCLFinal": true
+  },
+  {
+    "city": "Paris",
+    "club": "Paris Saint-Germain",
+    "name": "Parc des Princes",
+    "capacity": 47894,
+    "buildYear": 1972,
+    "wasUCLFinal": false
+  }
+]
