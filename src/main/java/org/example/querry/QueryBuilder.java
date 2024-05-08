@@ -33,6 +33,9 @@ public class QueryBuilder {
             case NOR:
                 filter = nor(getFilters(conditions));
                 break;
+            case IN:
+                filter = in(conditions[0].getField(), conditions[0].getValue());
+                break;
             case SET:
                 filter = set(conditions[0].getField(), conditions[0].getValue());
                 break;
@@ -65,6 +68,7 @@ public class QueryBuilder {
         }
         return bsonList;
     }
+
 
 
 
